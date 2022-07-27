@@ -1,10 +1,14 @@
-﻿void PrintArray (string [] input)
+﻿void PrintArray(string[] input)
 {
-    for (int i = 0; i < input.Length - 1;i++)
+    if (input.Length == 0) { System.Console.WriteLine("The array contains no fitting strings."); }
+    else
     {
-        System.Console.Write($"{input[i]}, ");
+        for (int i = 0; i < input.Length - 1; i++)
+        {
+            System.Console.Write($"{input[i]}, ");
+        }
+        System.Console.WriteLine($"{input[input.Length - 1]}.");
     }
-    System.Console.WriteLine($"{input[input.Length-1]}.");
 }
 
 
@@ -32,7 +36,7 @@ string[] FindStringsUnderGivenSize(string[] inputArray, int maxLength)
 }
 
 
-string[] initialArray = new string [] { "Monday", "Tuesday", "Wed", "Thu", "Friday", "Saturday", "Sun", "Mo"};
+string[] initialArray = new string [] { "Monday", "Tuesday", "Wed", "Thu", "Friday", "Saturday", "Sun", "12,"};
 int maxLength = 3;
 string[] newArray = FindStringsUnderGivenSize(initialArray, maxLength);
 PrintArray(newArray);
