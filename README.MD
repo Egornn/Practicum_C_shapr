@@ -1,4 +1,4 @@
-# Explanation for the solution
+# Explanation for the Program
 
 The basic idea of this particular solution is to find how many strings in the given array meets the requirement length of 3 or less symbols. Then it writes all such strings in the newly created array.
 
