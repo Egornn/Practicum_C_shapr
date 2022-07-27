@@ -30,3 +30,9 @@ string[] FindStringsUnderGivenSize(string[] inputArray, int maxLength)
     }
     return outputArray;
 }
+
+
+string[] initialArray = new string [] { "Monday", "Tuesday", "Wed", "Thu", "Friday", "Saturday", "Sun", "Mo"};
+int maxLength = 3;
+string[] newArray = FindStringsUnderGivenSize(initialArray, maxLength);
+PrintArray(newArray);
